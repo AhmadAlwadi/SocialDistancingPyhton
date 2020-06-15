@@ -1,0 +1,53 @@
+==================================Libraries====================================
+--> Turtle 
+--> Math
+--> Random
+--> Time
+===============================================================================
+
+================================Initial Thoughts===============================
+--> Have a class that resembles a person and it has an x, y coordinate
+--> Have a list of all the coordinate that has people in it
+--> The first person start with coordinate (0, 0)
+--> Make a loop that adds/deducts 2 from x/y axises 
+--> Use quick sort to sort the coordinates by their x-axis
+	--> Sort when a new entity has been added	
+--> Have a function that tells you if there is a perosn at that coordinate 
+	--> Use binary search to cluster the data and use the x-axis as an 
+		indicator
+--> Save the file of coordinates as txt
+--> Save a screenshot
+================================End Of Thoughts================================
+
+==============================Binary Search Algo===============================
+--> Run regular binary search until you find an index in the list that matches 
+	the x axis
+	--> If it does match; go back by one every time until it is always less
+		than the x axis
+		--> Once we find the first point in that axis keep incrementing the 
+			index by one and appending the current index to the sub list until
+			it is more than x axis coordinate
+	--> If it is smaller then keep increminting the index until you find the x 
+		coordinate, and when you do start doing the steps above
+	--> If it is larger then keep decrementing the index until you find the x 
+		coordinate, and when you do start doing the steps above
+==================================End Of Algo==================================
+
+
+===================================Simulation===================================
+--> Initiate the turtle screen
+--> Initial coordinate = (0, 0)
+--> Add this to the coordinates list 
+--> Use the quick sort algo
+--> Get possible people 
+--> For everyone in possibe people:
+	--> Do the binary search
+	--> Get the subset
+	--> Check for collision 
+		--> Yes?
+			--> Move on to next person
+		--> No?
+			--> Plot on the screen 
+			--> Add to the corrdinates list
+			--> Repeat
+===============================End Of Simulation===============================
