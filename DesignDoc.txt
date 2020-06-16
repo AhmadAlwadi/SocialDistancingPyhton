@@ -1,3 +1,10 @@
+=============================Problem Description===============================
+--> I would like to simulate an image of all the human population in one place;
+    however, I would like to follow the government guidlines of everyone being 
+    2 meters apart so that we are safe.
+==============================End Of Description===============================
+
+
 ==================================Libraries====================================
 --> Turtle 
 --> Math
